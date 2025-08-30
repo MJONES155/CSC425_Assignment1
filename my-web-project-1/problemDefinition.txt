@@ -1,0 +1,35 @@
+CSC425 Deliverable 2: User Research & Problem Definition Submission Template
+Student Name: David Foote
+ Branch Name: Deliverable2-DavidFoote
+ Date Submitted: August 29, 2025
+ 
+Target User Group
+Social Media Users
+ Any user of social media that have difficulties with doomscrolling.
+
+Problem Description
+Social media users spend too much time doomscrolling on their accounts. Doomscrolling can start out at simply looking at a meme that a friend sent to hours of scrolling. Many people who have this problem want to refocus their time into more meaningful tasks, but they struggle to find the motivation to pull themselves away from the screen.
+
+Evidence of the Problem
+●	According to a study in “Teens are spending nearly 5 hours daily on social media. Here are the mental health outcomes” by Tori DeAngelis, “Average number of hours a day that U.S. teens spend using seven popular social media apps, with YouTube, TikTok, and Instagram accounting for 87% of their social media time. Specifically, 37% of teens say they spend 5 or more hours a day, 14% spend 4 to less than 5 hours a day, 26% spend 2 to less than 4 hours a day, and 23% spend less than 2 hours a day on these three apps.”
+●	According to a study in “Social Media and Youth Mental Health” by the U.S. Surgeon General’s Advisory, “Social media use by youth is nearly universal. Up to 95% of youth ages 13–17 report using a social media platform, with more than a third saying they use social media ‘almost constantly.’”
+
+“How Might We” Statement
+How might we convince social media users to spend less time doomscrolling?
+
+User Persona
+Name: John Smith
+ Age: 19
+ Occupation: Part-time restaurant worker and part-time student
+ Location: Murray, KY
+ Goals: Complete his bachelor’s degree
+ Frustrations: Gets too absorbed into social media.
+ Technology Comfort Level: Uses a smart phone.
+
+Ethical Lens Applied
+Principle: Self-regulation
+●	Application: Several people have poor regulation skills and need something to pull themselves away from addictive activities.
+
+●	Stakeholders Impacted: Social media users and social media companies
+
+●	Professional Standard: usa.gov has several addiction support groups to help people with their addictive behaviors such as SMART Recovery.
