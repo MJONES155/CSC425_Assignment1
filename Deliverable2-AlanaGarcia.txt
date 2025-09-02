@@ -1,0 +1,42 @@
+CSC425 Deliverable 2: User Research & Problem Definition Submission Template
+Student Name: Alana Garcia
+ Branch Name: Deliverable2-AlanaGarcia
+ Date Submitted: August 29, 2025
+
+Target User Group
+International College Students
+Young adults adjusting to new cultural, academic, and professional systems. Many are balancing academics,work and also face language and cultural barriers.
+
+Problem Description
+International students frequently experience social isolation, uncertainty about academic expectations, and confusion navigating work/visa restrictions. Without a centralized resource, they struggle to find reliable guidance, build peer support networks, and access opportunities. These barriers contribute to stress, loneliness, and academic or professional setbacks.
+
+Evidence of the Problem
+“ By the end of the second month, my enthusiasm had literally died. I felt quite isolated. Like everyone else, I started searching for fellow Indians in my class and on campus. Skepticism had set in. I was not sure if I could adjust in the new environment.” —Moshmi Sanagavarapu, international graduate student from India
+
+
+According to NAFSA (2020) Even before the pandemic, international students reported feeling lonely and isolated; almost 1 in 4 international students in our study (24 percent) feel they have not been accepted socially.
+
+
+According to the Institute of International Education, statistics on international students show that about 20% fund their education in the U.S. through current employment.
+
+
+“How Might We” Statement
+How might we help international students build social connections and access resources to navigate academic, cultural, and work challenges more easily?
+
+User Persona
+Name: Maria Lopez
+ Age: 20
+ Occupation: Full-time undergraduate Student
+ Location: Murray, KY
+ Goals: Feels isolated, unsure about work eligibility rules, struggles with cultural differences in classroom participation
+ Frustrations: Limited bus routes, no broadband at home, misses deadlines when she can't make it to campus
+ Technology Comfort Level: High (regularly uses smartphone and laptop for social media and academics)
+
+Ethical Lens Applied
+Principle: Inclusivity and support for diverse communities
+Application: This issue highlights inequities in access to social, academic, and work resources. Failing to support international students fairly undermines inclusivity.
+
+
+Stakeholders Impacted: International students, university faculty, student support services
+
+Professional Standard: Aligns with ACM Code of Ethics 1.4: “Be fair and take action not to discriminate.”
