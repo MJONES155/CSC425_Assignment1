@@ -1,0 +1,37 @@
+CSC425 Deliverable 2: User Research & Problem Definition Submission Template
+
+Student Name: Emilia Kubik
+Branch Name: D2-EmiliaKubik
+Date Submitted: August 29, 2025
+
+Target User Group: 
+Neurodivergent adults
+Adults with ADHD, autism, or other neurodivergent traits who are in school/working and struggle to stay focused or manage their time. 
+
+Problem Description
+Many neurodivergent adults struggle to stay on task or work efficiently. There are tools out there meant for productivity, but they are all designed assuming that the user can plan linearly and execute consistently. For neurodivergent individuals, these tools can often be overwhelming and ultimately ineffective. This leads to further frustration, missed deadlines, and feelings of failure.
+
+Evidence of the Problem
+“The ADHD brain may favor tasks that offer novelty and stimulation and avoid those considered repetitive and boring. Hence, understimulated ADHD often makes it hard to stay on track with some activities and chores” add.org 
+“Over 60% of all autistic adults—including roughly 2 million with college degrees—struggle to obtain and keep employment.” today.umd.edu
+Reddit post: “I’ve tried every productivity app… and still feel like I’m failing. Anyone else?” reddit.com
+
+“How Might We” Statement
+How might we design a productivity tool that adapts to neurodivergent needs by offering flexible structure, emotional support, and sensory-friendly design?
+
+User Persona
+Name: Riley
+Age: 20
+Occupation: Undergrad student
+Location: Murray, KY
+Neurotype: ADHD + Autism
+Goals: Be able to consistently turn homework in on time and learn effective study tactics, build routines without pressure
+Frustrations: overwhelmed by cluttered apps, struggles with time blindness and task initiation, needs reminders that feel supportive not nagging, 
+Technology comfort level: Uses phone and tablet everyday, prefers visual interfaces
+
+App Features Ideas
+Mood based task suggestion -> “Feeling low energy? Try this 5 minute task”
+Visual timelines, As opposed to rigid calendars
+Gentle nudges, customizable tone -> “Want to try something small right now?”
+Personalizable sensory settings -> Dark mode, minimal animations, sound off, task completion sound
+Gamified progress tracking -> Celebrates effort, not just completion
