@@ -23,8 +23,10 @@ mongoose.connect(MONGODB_URI)
   });
 
 // Routes
-const messageRoutes = require('./routes/messageRoutes');
-app.use('/api', messageRoutes);
+const userRoutes = require('./routes/userRoutes');
+const transactionRoutes = require('./routes/transactionRoutes')
+app.use('/api', userRoutes);
+app.use('/api', transactionRoutes)
 
 // Default route
 app.get('/', (req, res) => {

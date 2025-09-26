@@ -1,181 +1,73 @@
-# Backend Example - Express.js & Mongoose
+# Dining Dollars Management API
 
-A RESTful API backend built with Express.js and Mongoose for managing messages with full CRUD operations.
+# Overview
+This RESTful API powers the backend for a student-focused dining dollars management app. It allows users to track spending, set budgeting preferences, and log transactions. Built with Node.js, Express, and MongoDB, the API supports full CRUD operations for both users and transactions.
 
-## Features
+# Setup and Run Instructions
+1. Install dependencies
+  npm install
+2. Create a .env file in the root directory
+  PORT=3000
+  MONGO_URI="your-mongodb-connection-string"
+3. Start the server
+  npm run dev
 
-- ✅ Complete CRUD operations for messages
-- ✅ Standardized JSON response format
-- ✅ MongoDB integration with Mongoose
-- ✅ Error handling middleware
-- ✅ Environment configuration
-- ✅ Postman/Thunder Client collection for testing
-- ✅ Controller-based architecture
+# .env Keys Required
+PORT	Port number for the server
+MONGO_URI	MongoDB connection string (Atlas or local)
 
-## Project Structure
+# Models
+User: 
 
-```
-Backend Example/
-├── controllers/
-│   └── messageController.js    # Business logic for message operations
-├── models/
-│   └── Message.js             # Mongoose schema for messages
-├── routes/
-│   └── messageRoutes.js       # API route definitions
-├── tests/
-│   ├── Backend_Example_API.postman_collection.json
-│   └── README.md              # Testing instructions
-├── .env                       # Environment variables
-├── package.json              # Dependencies and scripts
-└── server.js                 # Main server file
-```
+Field	             Type	             Constraints
 
-## Quick Start
+user	             String	           Required
+email	             String	           Required, must be valid email
+studentID	         String	           Required, unique
+balance            Number	           Required, default: 0
+budgetPreferences	 Object	           Required: weeklyLimit, notifsOn
 
-### 1. Install Dependencies
-```bash
-npm install
-```
+Transaction:
 
-### 2. Set Up Environment
-Make sure MongoDB is running locally, or update the `.env` file with your MongoDB connection string.
+Field	            Type	             Constraints
 
-### 3. Start the Server
-```bash
-# Development mode with auto-restart
-npm run dev
+userID	          ObjectId	         Required, references User
+type	            String	           Required (purchase, deposit, etc.)
+amount	          Number	           Required
+description	      String	           Optional
+createdAt	        Date	             Auto-generated
 
-# Production mode
-npm start
-```
+# Endpoint Documentation
 
-The server will start on `http://localhost:3000`
+Users:
 
-## API Endpoints
+Method	         Endpoint	           Description
 
-All responses follow the standardized format:
+POST	           /api/users	         Create a new user
+GET	             /api/users	         Get all users
+GET	             /api/users/:id	     Get a specific user
+PUT	             /api/users/:id	     Update a user
+DELETE	         /api/users/:id	     Delete a user
 
-**Success Response:**
-```json
+# Known Limitations
+
+Basic validation only — no advanced error handling
+Transactions are not linked to balance updates (yet)
+
+# Testing Instructions
+Tested using Postman- submitted a PDF with proof of testing success
+
+Example: Create a User
+Method: POST
+URL: http://localhost:3000/api/users
+Body:
 {
-  "success": true,
-  "data": { ... }
+  "user": "Emilia",
+  "email": "emilia@example.com",
+  "studentID": "123456",
+  "balance": 100,
+  "budgetPreferences": {
+    "weeklyLimit": 50,
+    "NotifsOn": true
+  }
 }
-```
-
-**Error Response:**
-```json
-{
-  "success": false,
-  "error": "Descriptive error message"
-}
-```
-
-### Message Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/messages` | Create a new message |
-| GET | `/api/messages` | Get all messages |
-| GET | `/api/messages/:id` | Get a specific message by ID |
-| PUT | `/api/messages/:id` | Update a message by ID |
-| DELETE | `/api/messages/:id` | Delete a message by ID |
-
-### Message Schema
-
-```json
-{
-  "author": "string (required, max 100 chars)",
-  "text": "string (required, max 1000 chars)",
-  "timestamp": "Date (auto-generated)",
-  "isRead": "boolean (default: false)"
-}
-```
-
-## Testing
-
-### Option 1: Postman
-1. Import the collection: `tests/Backend_Example_API.postman_collection.json`
-2. Test each endpoint with the provided sample data
-
-### Option 2: Thunder Client (VS Code)
-1. Install Thunder Client extension
-2. Follow the instructions in `tests/README.md`
-
-### Option 3: cURL Examples
-
-**Create a message:**
-```bash
-curl -X POST http://localhost:3000/api/messages \
-  -H "Content-Type: application/json" \
-  -d '{
-    "author": "John Doe",
-    "text": "Hello, this is a test message!",
-    "isRead": false
-  }'
-```
-
-**Get all messages:**
-```bash
-curl http://localhost:3000/api/messages
-```
-
-**Get message by ID:**
-```bash
-curl http://localhost:3000/api/messages/msg-001
-```
-
-**Update a message:**
-```bash
-curl -X PUT http://localhost:3000/api/messages/msg-001 \
-  -H "Content-Type: application/json" \
-  -d '{
-    "author": "Jane Doe",
-    "text": "Updated message text",
-    "isRead": true
-  }'
-```
-
-**Delete a message:**
-```bash
-curl -X DELETE http://localhost:3000/api/messages/msg-001
-```
-
-## Current Status
-
-**Phase 1: ✅ Complete**
-- [x] Routes & Endpoints (all 5 CRUD operations)
-- [x] Controller placeholders with standardized responses
-- [x] Shared response format implementation
-- [x] Testing setup (Postman & Thunder Client collections)
-
-**Phase 2: 🔄 Ready for Implementation**
-- [ ] Replace placeholder responses with actual database operations
-- [ ] Add data validation
-- [ ] Implement error handling for edge cases
-- [ ] Add authentication (optional)
-
-## Next Steps
-
-The current implementation uses placeholder responses. To connect to the database:
-
-1. Uncomment the database logic in `controllers/messageController.js`
-2. Replace placeholder responses with actual Mongoose operations
-3. Test with real data
-
-## Environment Variables
-
-```bash
-PORT=3000
-MONGODB_URI=mongodb://localhost:27017/backend-example
-```
-
-For production, replace `MONGODB_URI` with your actual MongoDB connection string.
-
-## Dependencies
-
-- **express**: Web framework
-- **mongoose**: MongoDB object modeling
-- **cors**: Cross-origin resource sharing
-- **dotenv**: Environment variable management
-- **nodemon**: Development auto-restart (dev dependency)
