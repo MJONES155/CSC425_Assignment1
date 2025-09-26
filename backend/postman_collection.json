@@ -1,0 +1,126 @@
+{
+  "info": {
+    "name": "CSC425 Message API",
+    "_postman_id": "d8f3b6a2-0000-4000-8000-000000000000",
+    "description": "Collection for the Message Board API endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Message",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Hello world\",\n  \"body\": \"This is my first message\",\n  \"author\": \"Alice\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/messages",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "messages"
+          ]
+        }
+      }
+    },
+    {
+      "name": "List Messages",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/messages",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "messages"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Message by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/messages/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "messages",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Message",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated title\",\n  \"body\": \"Updated body\",\n  \"author\": \"Bob\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/messages/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "messages",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Message",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/messages/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "messages",
+            ":id"
+          ]
+        }
+      }
+    }
+  ]
+}
