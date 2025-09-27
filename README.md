@@ -5,11 +5,17 @@ A RESTful API backend built with Express.js and Mongoose for managing meals with
 Features
 
 ✅ Complete CRUD operations for meals
+
 ✅ Standardized JSON response format
+
 ✅ MongoDB integration with Mongoose
+
 ✅ Error handling middleware
+
 ✅ Environment configuration via .env
+
 ✅ Postman collection for testing
+
 ✅ Controller-based architecture
 
 Quick Start
