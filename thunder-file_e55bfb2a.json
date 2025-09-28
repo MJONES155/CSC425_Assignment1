@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "data": {
+    "messages": [
+      {
+        "id": "msg-001",
+        "author": "John Doe",
+        "text": "Hello, this is the first message!",
+        "timestamp": "2025-09-27T19:52:12.564Z",
+        "isRead": false
+      },
+      {
+        "id": "msg-002",
+        "author": "Jane Smith",
+        "text": "This is another sample message.",
+        "timestamp": "2025-09-28T07:52:12.564Z",
+        "isRead": true
+      },
+      {
+        "id": "msg-003",
+        "author": "Bob Johnson",
+        "text": "Latest message in the system.",
+        "timestamp": "2025-09-28T19:52:12.564Z",
+        "isRead": false
+      }
+    ],
+    "count": 3
+  }
+}

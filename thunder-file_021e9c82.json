@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "data": {
+    "message": "Message created successfully",
+    "messageData": {
+      "id": "placeholder-id-123",
+      "author": "Sample Author",
+      "text": "Sample message text",
+      "timestamp": "2025-09-28T19:53:03.457Z",
+      "isRead": false
+    }
+  }
+}
